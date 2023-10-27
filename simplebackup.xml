@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>simplebackup</name>
+	<creationDate>Outubro 2023</creationDate>
+	<author>Ribamar FS</author>
+	<authorEmail>ribafs@gmail.com</authorEmail>
+	<authorUrl>https://ribamar.net.br</authorUrl>
+	<copyright>Copyright (C) 2016 Ribamar FS. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>2.0</version>
+	<description>Backup de Arquivos e do banco de site Joomla</description>
+
+	<administration>
+		<menu>COM_SIMPLEBACKUP</menu>
+		<files folder="admin">
+			<folder>backups</folder>
+			<filename>simplebackup.php</filename>
+		</files>
+		<languages>
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_simplebackup.sys.ini</language>
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_simplebackup.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_simplebackup.sys.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_simplebackup.ini</language>
+		</languages>
+	</administration>
+</extension>
+
