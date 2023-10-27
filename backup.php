@@ -26,11 +26,11 @@ if(!defined('DS')){
 }
 
 // Backup do Banco
-JToolBarHelper::title( JText::_( 'COM_SIMPLEBACKUP_FILES_DATABASE' ), 'addedit.png' );
+JToolBarHelper::title( JText::_( 'COM_BACKUP_FILES_DATABASE' ), 'addedit.png' );
 ?>
 
 <form action="" method="post" name="adminForm" id="adminForm">
-<input type="submit" name="send" class="btn btn-primary" value="<?php print JText::_('COM_SIMPLEBACKUP_START');?>">
+<input type="submit" name="send" class="btn btn-primary" value="<?php print JText::_('COM_BACKUP_START');?>">
 </form>
 
 <?php
@@ -42,9 +42,9 @@ $config = JFactory::getApplication();
 
 if(JFactory::getApplication()->input->post->get('send')){
 
-	$backup='components'.DS.'com_simplebackup'.DS.'backups';
-	$backupmv=basename(JPATH_ADMINISTRATOR).DS.'components'.DS.'com_simplebackup'.DS.'backups';
-	$backupdel=JPATH_ADMINISTRATOR.DS.'components'.DS.'com_simplebackup'.DS.'backups'.DS.'*';
+	$backup='components'.DS.'com_backup'.DS.'backups';
+	$backupmv=basename(JPATH_ADMINISTRATOR).DS.'components'.DS.'com_backup'.DS.'backups';
+	$backupdel=JPATH_ADMINISTRATOR.DS.'components'.DS.'com_backup'.DS.'backups'.DS.'*';
 
 	system("rm $backupdel");
 
