@@ -29,6 +29,10 @@ Gerado um arquivo zip e um sql para download a pasta
 
 administrator/components/com_simplebackup/backups
 
+## Versão com opção de excluir um certo diretório do backup
+
+[com_backupx.zip](com_backupx.zip)
+
 License
 -------
 
